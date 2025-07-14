@@ -1,6 +1,7 @@
 export default function footer (){
     return (
-        <footer className="footer p-5 bg-dark d-flex justify-content-between">
+        <footer className="footer p-5 bg-dark"> 
+            <div className="container d-flex justify-content-between align-items-center">
             <div className="sign-button">
               <button type="button" class="btn btn-outline-primary text-white ">SING-UP NOW</button>
             </div>
@@ -13,6 +14,7 @@ export default function footer (){
                     <li><a href="#"><img src="../../public/img/footer-pinterest.png" alt="pinterest"/></a></li>
                     <li><a href="#"><img src="../../public/img/footer-periscope.png" alt="periscope"/></a></li>
                 </ul>
+            </div>
             </div>
         </footer>
     )

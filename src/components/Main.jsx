@@ -6,8 +6,8 @@
                         -- Content Goes Here --
                     </p>
                 </div>
-                <div className="fast-links">
-                    <ul className="list-unstyled d-flex justify-content-around align-items-center bg-primary p-3">
+                <div className="fast-links bg-primary">
+                    <ul className="list-unstyled d-flex justify-content-around align-items-center p-3">
                         <li className="list-unstyled">
                             <a href="#" className="text-decoration-none text-white"> <img src="../../public/img/buy-comics-digital-comics.png" width="50" height="50"/> DIGITAL COMICS </a>
                         </li>
@@ -25,7 +25,7 @@
                         </li>
                     </ul>
                 </div>
-                                    <div className="row text-white p-5">
+                        <div className="row text-white p-5">
                         <div className="col-3">
                         <h5>DC COMICS</h5>
                         <ul className="list-unstyled">
