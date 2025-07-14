@@ -1,10 +1,10 @@
 export default function Header () {
     return (
     <header>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container p-2rem">
+       <div className="container">
+         <nav className="navbar navbar-expand-lg p-3 justify-content-between">
                 <a className="navbar-brand" href="#">
-                    <img className="logo" src="../../public/img/dc-logo.png" alt="DC_logo" width="100" height="100"/>
+                    <img className="logo" src="../../public/img/dc-logo.png" alt="DC_logo" width="120" height="120"/>
                 </a>
             <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
@@ -39,9 +39,9 @@ export default function Header () {
                             <a className="nav-link" href="#">SHOP</a>
                         </li>
                     </ul>
-                 </div>
             </div>
         </nav>
+       </div>
     </header>        
     )
 }
