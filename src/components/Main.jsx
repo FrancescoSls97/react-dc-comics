@@ -194,8 +194,13 @@ export default function Main () {
     return (
         <main>
             <div className="jumbotron">
+                <img  src="../../public/img/jumbotron.jpg" alt="jumbotron" className="jumbotron-img"/>
+              <div className="current-series d-flex justify-content-center align-items-center p-5">
+                <button type="button" className="btn btn-primary text-white p-2">CURRENT SERIES</button>
+              </div>
             </div>  
-                <div className="content p-4 text-white fs-1 bg-black">
+              <div className="container m-auto p-5">
+                                <div className="content p-4 text-white fs-1 bg-black">
                     <div className="comics d-flex row g-4">
                     {comics.map(({thumb, series}) => (
                       <div className="col-2" key={comics.id}>
@@ -209,6 +214,7 @@ export default function Main () {
                     ))}
                     </div>
                 </div>
+              </div>
                 <div className="load-more d-flex justify-content-center align-items-center p-5">
                   <button type="button" className="btn btn-primary text-white ">LOAD MORE</button>
                 </div>

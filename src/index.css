@@ -10,14 +10,20 @@ body {
   color: white;
 }
 
-.jumbotron {
-  background-image: url(/public/img/jumbotron.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
+main {
+  margin: 0 auto;
 }
-
+.jumbotron-img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.current-series {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  text-align: center;
+}
 .footer {
   background-image: url(../public/img/footer-bg.jpg);
   background-size: cover;
