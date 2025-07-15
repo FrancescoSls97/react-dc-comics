@@ -1,32 +1,3 @@
-const bluebar = [
-    {
-        href: "#",
-        imgsrc: "/public/img/buy-comics-digital-comics.png",
-        text: "DIGITAL CPMICS"
-    },
-    {
-        href: "#",
-        imgsrc: "/public/img/buy-comics-merchandise.png",
-        text: "DC MERCHANDISE"
-    },
-    {
-        href: "#",
-        imgsrc: "/public/img/buy-comics-subscriptions.png",
-        text: "SUBSCRIPTION"
-    },
-    {
-        href: "#",
-        imgsrc: "/public/img/buy-comics-shop-locator.png",
-        text: "COMIC SHOP LOCATOR"
-    },
-    {
-        href: "#",
-        imgsrc: "/public/img/buy-dc-power-visa.svg",
-        text: "DC POWER VISA"
-    }
-
-]
-
 const comics = [
   {
     id: 1,
@@ -83,6 +54,20 @@ const comics = [
     type: "comic book",
     artists: ["Rafael Albuquerque"],
     writers: ["Hope Larson"],
+  },
+  {
+    id: 5,
+    title: "Batman #56",
+    description:
+      "The Dark Knight's looking to drop both the hammer and sickle on the KGBeast. The Russian super-assassin has gone too far, and Batman will stop at nothing to hunt him down. But is the Dark Knight willing to step into the darkness himself to find justice?",
+    thumb:
+      "https://imgs.search.brave.com/3vP5d3cOVOuC0f6Uhm7CkV_qFk5hGj5rE4jK5I6n7dI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4y/LnBlbmd1aW4uY29t/LmF1L2NvdmVycy9v/cmlnaW5hbC83OTYx/OTQzMTM5OTk4Lmpw/Zw",
+    price: "$3.99",
+    series: "Batman",
+    sale_date: "2018-10-03",
+    type: "comic book",
+    artists: ["Tony S. Daniel"],
+    writers: ["Tom King"],
   },
   {
     id: 6,
@@ -190,40 +175,4 @@ const comics = [
   },
 ];
 
-export default function Main () {
-    return (
-        <main>
-            <div className="jumbotron">
-            </div>  
-                <div className="content p-4 text-white fs-1 bg-black">
-                    <div className="comics d-flex row g-4">
-                    {comics.map(({thumb, series}) => (
-                      <div className="col-2" key={comics.id}>
-                        <div className="card bg-black text-white">
-                          <img className="comic-cover" src={thumb} alt="cover" />
-                          <div className="card-body">
-                            <h3>{series}</h3>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                    </div>
-                </div>
-                <div className="load-more d-flex justify-content-center align-items-center p-5">
-                  <button type="button" className="btn btn-primary text-white ">LOAD MORE</button>
-                </div>
-                <div className="fast-links bg-primary mb-n5">
-                    <ul className="list-unstyled d-flex justify-content-around align-items-center p-3">
-                          {bluebar.map(item => (
-                            <li key={item.text}>
-                              <a href={item.href} className="d-flex align-items-center text-decoration-none text-white">
-                                <img src={item.imgsrc} alt={item.text} style={{ width: "50px", marginRight: "10px" }} />
-                                <span>{item.text}</span>
-                              </a>
-                            </li>
-                          ))}
-                    </ul>
-                </div>                
-        </main>
-    )
-}
+export default comics;

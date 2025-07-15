@@ -7,9 +7,26 @@
 
 body {
   background-color: black;
+  color: white;
 }
 
-main {
-  background-image: url("../public/img/footer-bg.jpg");
-  background-size: contain;
+.jumbotron {
+  background-image: url(/public/img/jumbotron.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+}
+
+.footer {
+  background-image: url(../public/img/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.comic-cover {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  background: black;
 }

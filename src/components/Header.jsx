@@ -1,7 +1,7 @@
 export default function Header () {
     return (
-    <header className="bg-white">
-         <nav className="navbar navbar-expand-lg p-3 d-flex justify-content-between">
+    <header className="bg-white">       
+                     <nav className="navbar navbar-expand-lg p-3 d-flex justify-content-between">
                 <a className="navbar-brand" href="#">
                     <img className="logo" src="../../public/img/dc-logo.png" alt="DC_logo" width="120" height="120"/>
                 </a>
