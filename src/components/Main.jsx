@@ -201,10 +201,14 @@ export default function Main () {
                 <button type="button" className="btn btn-primary text-white p-2">CURRENT SERIES</button>
               </div>
             </div>  
-              <div className="container m-auto p-5">
-                {comics.map(({id, title, description, thumb, price, series, sale_date, type, artists, writers}) => {
+              <div className="container m-5">
+                <div className="row row-cols-1 row-cols-md-6 g-4">
+                  {comics.map(({id, title, description, thumb, price, series, sale_date, type, artists, writers}) => {
+                    console.log(thumb);     
                   return <CardComic key={id} src={thumb} series={series} />
-                })}
+                  
+                  })}
+                </div>
               </div>
                 <div className="load-more d-flex justify-content-center align-items-center p-5">
                   <button type="button" className="btn btn-primary text-white ">LOAD MORE</button>
