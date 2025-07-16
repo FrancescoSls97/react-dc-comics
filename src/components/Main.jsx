@@ -1,3 +1,5 @@
+import CardComic from "./Card";
+
 const bluebar = [
     {
         href: "#",
@@ -200,25 +202,14 @@ export default function Main () {
               </div>
             </div>  
               <div className="container m-auto p-5">
-                                <div className="content p-4 text-white fs-1 bg-black">
-                    <div className="comics d-flex row g-4">
-                    {comics.map(({thumb, series}) => (
-                      <div className="col-2" key={comics.id}>
-                        <div className="card bg-black text-white">
-                          <img className="comic-cover" src={thumb} alt="cover" />
-                          <div className="card-body">
-                            <h3>{series}</h3>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                    </div>
-                </div>
+                {comics.map(({id, title, description, thumb, price, series, sale_date, type, artists, writers}) => {
+                  return <CardComic key={id} src={thumb} series={series} />
+                })}
               </div>
                 <div className="load-more d-flex justify-content-center align-items-center p-5">
                   <button type="button" className="btn btn-primary text-white ">LOAD MORE</button>
                 </div>
-                <div className="fast-links bg-primary mb-n5">
+                <div className="fast-links bg-primary m-0">
                     <ul className="list-unstyled d-flex justify-content-around align-items-center p-3">
                           {bluebar.map(item => (
                             <li key={item.text}>
